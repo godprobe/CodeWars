@@ -19,7 +19,7 @@ For example:
 import "testing"
 
 func TestMessi(t *testing.T) {
-	got := MessiGoals([]int{5, 10, 2})
+	got := MessiGoals(5, 10, 2)
 	want := 17
 	if got != want {
 		t.Errorf("got %v, want %v", got, want)
