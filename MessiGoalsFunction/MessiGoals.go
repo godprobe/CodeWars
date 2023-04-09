@@ -1,5 +1,5 @@
 package kata
 
-func MessiGoals(laLigaGoals, copaDelRoyaleGoals, championsLeagueGoals int) int {
-	return laLigaGoals + copaDelRoyaleGoals + championsLeagueGoals
+func MessiGoals(laLigaGoals, copaDelReyGoals, championsLeagueGoals int) int {
+	return laLigaGoals + copaDelReyGoals + championsLeagueGoals
 }
