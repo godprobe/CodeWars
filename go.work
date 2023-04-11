@@ -4,6 +4,7 @@ use (
 	./AlTeRnAtInGcAsE
 	./MessiGoalsFunction
 	./PowersOf2
+	./ReduceButGrow
 	./ReturningStrings
 	./SmallestIntOfArray
 	./SquareSum
