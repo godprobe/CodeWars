@@ -6,4 +6,5 @@ use (
 	./ReturningStrings
 	./SmallestIntOfArray
 	./SquareSum
+	./TerminalGameMoveFunction
 )
