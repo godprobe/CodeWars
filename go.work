@@ -9,4 +9,5 @@ use (
 	./SmallestIntOfArray
 	./SquareSum
 	./TerminalGameMoveFunction
+	./TwiceAsOld
 )
