@@ -5,14 +5,12 @@ import "strconv"
 func SumMix(data []any) int {
 	sum := 0
 	for _, val := range data {
-		iVal, ok := val.(int)
-		if ok {
-			sum += iVal
-		}
-		sVal, ok := val.(string)
-		if ok {
-			sVal, _ := strconv.Atoi(sVal)
-			sum += sVal
+		switch val := val.(type) {
+		case int:
+			sum += val
+		case string:
+			s, _ := strconv.Atoi(val)
+			sum += s
 		}
 	}
 	return sum
