@@ -4,6 +4,7 @@ use (
 	./AlTeRnAtInGcAsE
 	./BeginnerSeries2Clock
 	./ConvertBooleansToStrings
+	./MergeTwoSortedArrays
 	./MessiGoalsFunction
 	./PowersOf2
 	./ReduceButGrow
