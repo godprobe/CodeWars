@@ -37,8 +37,8 @@ var (
 
 func TestMergeArrays(t *testing.T) {
 	for _, val := range cases {
-		got := MergeArrays(val.array1, val.array2)
-		want := val.result
+		got = MergeArrays(val.array1, val.array2)
+		want = val.result
 		if !reflect.DeepEqual(got, want) {
 			t.Errorf("got %v, want %v", got, want)
 		}
