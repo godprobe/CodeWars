@@ -42,5 +42,10 @@ func TestMergeArrays(t *testing.T) {
 		if !reflect.DeepEqual(got, want) {
 			t.Errorf("got %v, want %v", got, want)
 		}
+		got = MergeArraysMap(val.array1, val.array2)
+		want = val.result
+		if !reflect.DeepEqual(got, want) {
+			t.Errorf("got %v, want %v", got, want)
+		}
 	}
 }
