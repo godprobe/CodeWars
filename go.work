@@ -9,6 +9,7 @@ use (
 	./PowersOf2
 	./ReduceButGrow
 	./ReturningStrings
+	./ReverseWords
 	./SmallestIntOfArray
 	./SquareSum
 	./SumMixedArray
