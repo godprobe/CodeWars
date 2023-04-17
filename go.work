@@ -14,5 +14,6 @@ use (
 	./SquareSum
 	./SumMixedArray
 	./TerminalGameMoveFunction
+	./ThirdAngleOfATriangle
 	./TwiceAsOld
 )
