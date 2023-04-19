@@ -10,9 +10,10 @@ func Points(pts []string) int {
 		scores := strings.Split(val, ":")
 		x := scores[0]
 		y := scores[1]
-		if x > y {
+		switch {
+		case x > y:
 			score += 3
-		} else if x == y {
+		case x == y:
 			score += 1
 		}
 	}
