@@ -15,5 +15,6 @@ use (
 	./SumMixedArray
 	./TerminalGameMoveFunction
 	./ThirdAngleOfATriangle
+	./TotalAmountOfPoints
 	./TwiceAsOld
 )
