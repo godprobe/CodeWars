@@ -5,6 +5,7 @@ use (
 	./BeginnerSeries2Clock
 	./ConvertBooleansToStrings
 	./CountTheDivisorsOfANumber
+	./GradeBook
 	./MergeTwoSortedArrays
 	./MessiGoalsFunction
 	./PowersOf2
