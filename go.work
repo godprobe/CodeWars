@@ -10,6 +10,7 @@ use (
 	./MessiGoalsFunction
 	./PowersOf2
 	./ReduceButGrow
+	./RemoveStringSpaces
 	./ReturningStrings
 	./ReverseWords
 	./SmallestIntOfArray
