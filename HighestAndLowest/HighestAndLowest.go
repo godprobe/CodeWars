@@ -1,8 +1,10 @@
 package kata
 
-import "strings"
-import "strconv"
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+	"strings"
+)
 
 func HighAndLow(n string) string {
 	parsed := strings.Split(n, " ")
