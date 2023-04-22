@@ -6,6 +6,7 @@ use (
 	./ConvertBooleansToStrings
 	./CountTheDivisorsOfANumber
 	./GradeBook
+	./HighestAndLowest
 	./MergeTwoSortedArrays
 	./MessiGoalsFunction
 	./PowersOf2
