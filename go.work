@@ -10,6 +10,7 @@ use (
 	./GradeBook
 	./HighestAndLowest
 	./HighestProfitWins
+	./ILoveYouALittle
 	./MergeTwoSortedArrays
 	./MessiGoalsFunction
 	./PowersOf2
