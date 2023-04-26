@@ -3,6 +3,7 @@ go 1.20
 use (
 	./AlTeRnAtInGcAsE
 	./BeginnerSeries2Clock
+	./ConvertANumberToAString
 	./ConvertAStringToAnArray
 	./ConvertBooleansToStrings
 	./CountTheDivisorsOfANumber
