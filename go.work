@@ -9,6 +9,7 @@ use (
 	./CountTheDivisorsOfANumber
 	./GradeBook
 	./HighestAndLowest
+	./HighestProfitWins
 	./MergeTwoSortedArrays
 	./MessiGoalsFunction
 	./PowersOf2
