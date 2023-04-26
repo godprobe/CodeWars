@@ -1,7 +1,11 @@
 package kata
 
-import "fmt"
+import "strconv"
+
+// import "fmt"
 
 func NumberToString(i int) string {
-	return fmt.Sprint(i)
+	return strconv.Itoa(i)
+
+	//	return fmt.Sprint(i)
 }
