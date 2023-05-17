@@ -6,6 +6,7 @@ use (
 	./ConvertANumberToAString
 	./ConvertAStringToAnArray
 	./ConvertBooleansToStrings
+	./CountTheDigit
 	./CountTheDivisorsOfANumber
 	./GradeBook
 	./HighestAndLowest
