@@ -12,5 +12,5 @@ func NbDig(n, d int) int {
 		allnums = append(allnums, i*i)
 	}
 
-	return len(strings.Split(fmt.Sprint(allnums), strconv.Itoa(d))) - 1
+	return strings.Count(fmt.Sprint(allnums), strconv.Itoa(d))
 }
