@@ -6,6 +6,7 @@ use (
 	./ConvertANumberToAString
 	./ConvertAStringToAnArray
 	./ConvertBooleansToStrings
+	./ConvertNumberToReversedArrayOfDigits
 	./CountByX
 	./CountTheDigit
 	./CountTheDivisorsOfANumber
