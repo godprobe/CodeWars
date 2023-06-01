@@ -1,9 +1,9 @@
 package kata
 
 func CountBy(x, n int) []int {
-	result := []int{}
+	arr := make([]int, n)
 	for i := 1; i <= n; i++ {
-		result = append(result, x*i)
+		arr[i-1] = i * x
 	}
-	return result
+	return arr
 }

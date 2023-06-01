@@ -1,4 +1,4 @@
-package kata_test
+package kata
 
 import (
 	"reflect"
