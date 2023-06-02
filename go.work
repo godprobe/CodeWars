@@ -22,6 +22,7 @@ use (
 	./RemoveStringSpaces
 	./ReturningStrings
 	./ReverseWords
+	./RockPaperScissors
 	./SmallestIntOfArray
 	./SquareSum
 	./SumMixedArray
