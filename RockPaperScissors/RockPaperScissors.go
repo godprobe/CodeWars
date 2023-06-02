@@ -1,11 +1,11 @@
 package kata
 
 func Rps(player1, player2 string) string {
-	outcome := "Draw!"
 	rock := "rock"
 	paper := "paper"
 	scissors := "scissors"
 
+	outcome := "Draw!"
 	if player1 == player2 {
 		return outcome
 	}
