@@ -12,13 +12,10 @@ func Rps(player1, player2 string) string {
 
 	outcome = "Player 2 won!"
 	switch player1 + player2 {
-	case rock + paper:
-		return outcome
-	case paper + scissors:
-		return outcome
-	case scissors + rock:
+	case rock + paper, paper + scissors, scissors + rock:
 		return outcome
 	}
+
 	outcome = "Player 1 won!"
 	return outcome
 }
