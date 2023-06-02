@@ -5,17 +5,14 @@ func Rps(player1, player2 string) string {
 	paper := "paper"
 	scissors := "scissors"
 
-	outcome := "Draw!"
 	if player1 == player2 {
-		return outcome
+		return "Draw!"
 	}
 
-	outcome = "Player 2 won!"
 	switch player1 + player2 {
 	case rock + paper, paper + scissors, scissors + rock:
-		return outcome
+		return "Player 2 won!"
 	}
 
-	outcome = "Player 1 won!"
-	return outcome
+	return "Player 1 won!"
 }
