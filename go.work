@@ -8,6 +8,7 @@ use (
 	./ConvertBooleansToStrings
 	./ConvertNumberToReversedArrayOfDigits
 	./CountByX
+	./CountOfPositivesSumOfNegatives
 	./CountTheDigit
 	./CountTheDivisorsOfANumber
 	./GradeBook
