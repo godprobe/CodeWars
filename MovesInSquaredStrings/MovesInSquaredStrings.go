@@ -17,5 +17,5 @@ func Oper(f FParam, x string) string {
 	// oper(vert_mirror, s) => "dcba\nhgfe\nlkji\nponm"
 	// oper(hor_mirror, s) => "mnop\nijkl\nefgh\nabcd"
 	// your code
-	return "OperFail"
+	return f(x)
 }

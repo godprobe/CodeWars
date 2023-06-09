@@ -42,53 +42,48 @@ The input strings are separated by , instead of \n. The output strings should be
 */
 
 var (
-	vertFuncString = "VertMirror"
-	horFuncString  = "HorMirror"
-	got, want      string
-	cases          = []struct {
-		whichFunc     string
+	vertFunc  FParam = VertMirror // VertMirror(string) string
+	horFunc   FParam = HorMirror  // HorMirror(string) string
+	got, want string
+	cases     = []struct {
+		whichFunc     FParam
 		input, output string
 	}{
-		{vertFuncString, "hSgdHQ\nHnDMao\nClNNxX\niRvxxH\nbqTVvA\nwvSyRu", "QHdgSh\noaMDnH\nXxNNlC\nHxxvRi\nAvVTqb\nuRySvw"},
-		{horFuncString, "lVHt\nJVhv\nCSbg\nyeCt", "yeCt\nCSbg\nJVhv\nlVHt"},
+		{vertFunc, "abcd\nefgh\nijkl\nmnop", "dcba\nhgfe\nlkji\nponm"},
+		{horFunc, "abcd\nefgh\nijkl\nmnop", "mnop\nijkl\nefgh\nabcd"},
+		{vertFunc, "hSgdHQ\nHnDMao\nClNNxX\niRvxxH\nbqTVvA\nwvSyRu", "QHdgSh\noaMDnH\nXxNNlC\nHxxvRi\nAvVTqb\nuRySvw"},
+		{horFunc, "lVHt\nJVhv\nCSbg\nyeCt", "yeCt\nCSbg\nJVhv\nlVHt"},
 	}
 )
 
-func TestVertMirror(t *testing.T) {
-	for _, val := range cases {
-		if val.whichFunc == vertFuncString {
-			got = VertMirror(val.input)
-			want = val.output
-		}
-		if got != want {
-			t.Errorf("got %s, want %s", got, want)
-		}
-	}
-}
+// func TestVertMirror(t *testing.T) {
+// 	for _, val := range cases {
+// 		if val.whichFunc == vertFunc {
+// 			got = VertMirror(val.input)
+// 			want = val.output
+// 		}
+// 		if got != want {
+// 			t.Errorf("got %s, want %s", got, want)
+// 		}
+// 	}
+// }
 
-func TestHorMirror(t *testing.T) {
-	for _, val := range cases {
-		if val.whichFunc == horFuncString {
-			got = HorMirror(val.input)
-			want = val.output
-		}
-		if got != want {
-			t.Errorf("got %s, want %s", got, want)
-		}
-	}
-}
+// func TestHorMirror(t *testing.T) {
+// 	for _, val := range cases {
+// 		if val.whichFunc == horFunc {
+// 			got = HorMirror(val.input)
+// 			want = val.output
+// 		}
+// 		if got != want {
+// 			t.Errorf("got %s, want %s", got, want)
+// 		}
+// 	}
+// }
 
 func TestOper(t *testing.T) {
 	for _, val := range cases {
 		want = val.output
-		switch val.whichFunc {
-		case vertFuncString:
-			got = VertMirror(val.input)
-		case horFuncString:
-			got = HorMirror(val.input)
-		default:
-			t.Errorf("Incompatible func parameter.")
-		}
+		got = val.whichFunc(val.input)
 		if got != want {
 			t.Errorf("got %s, want %s", got, want)
 		}
