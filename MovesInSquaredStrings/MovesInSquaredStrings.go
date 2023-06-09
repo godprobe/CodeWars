@@ -6,18 +6,14 @@ import (
 
 func VertMirror(s string) string {
 	split := strings.Split(s, "\n")
-	for i := 0; i < len(split); i++ {
-		split[i] = reverse(split[i])
-	}
+	split = reverseSlice(split)
 	return strings.Join(split, "\n")
 }
 
 func HorMirror(s string) string {
-	s = reverse(s)
+	s = reverseString(s)
 	split := strings.Split(s, "\n")
-	for i := 0; i < len(split); i++ {
-		split[i] = reverse(split[i])
-	}
+	split = reverseSlice(split)
 	return strings.Join(split, "\n")
 }
 
@@ -27,7 +23,7 @@ func Oper(f FParam, x string) string {
 	return f(x)
 }
 
-func reverse(s string) string {
+func reverseString(s string) string {
 	var (
 		temp rune
 	)
@@ -39,4 +35,11 @@ func reverse(s string) string {
 		runes[last-i] = temp
 	}
 	return string(runes)
+}
+
+func reverseSlice(st []string) []string {
+	for i := 0; i < len(st); i++ {
+		st[i] = reverseString(st[i])
+	}
+	return st
 }

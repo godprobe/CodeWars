@@ -56,30 +56,6 @@ var (
 	}
 )
 
-// func TestVertMirror(t *testing.T) {
-// 	for _, val := range cases {
-// 		if val.whichFunc == vertFunc {
-// 			got = VertMirror(val.input)
-// 			want = val.output
-// 		}
-// 		if got != want {
-// 			t.Errorf("got %s, want %s", got, want)
-// 		}
-// 	}
-// }
-
-// func TestHorMirror(t *testing.T) {
-// 	for _, val := range cases {
-// 		if val.whichFunc == horFunc {
-// 			got = HorMirror(val.input)
-// 			want = val.output
-// 		}
-// 		if got != want {
-// 			t.Errorf("got %s, want %s", got, want)
-// 		}
-// 	}
-// }
-
 func TestOper(t *testing.T) {
 	for _, val := range cases {
 		want = val.output
