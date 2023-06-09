@@ -6,7 +6,7 @@ func CountPositivesSumNegatives(numbers []int) []int {
 	)
 	for _, val := range numbers {
 		switch {
-		case val >= 0:
+		case val > 0:
 			posCount += 1
 		default:
 			negSum += val
