@@ -16,6 +16,7 @@ use (
 	./ILoveYouALittle
 	./MergeTwoSortedArrays
 	./MessiGoalsFunction
+	./MovesInSquaredStrings
 	./MultiplesOfANumber
 	./PowersOf2
 	./ReduceButGrow
