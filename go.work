@@ -15,6 +15,7 @@ use (
 	./HighestAndLowest
 	./HighestProfitWins
 	./ILoveYouALittle
+	./IsItAPalindrome
 	./MergeTwoSortedArrays
 	./MessiGoalsFunction
 	./MovesInSquaredStrings
