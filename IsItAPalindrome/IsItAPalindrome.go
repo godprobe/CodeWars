@@ -6,7 +6,7 @@ import (
 
 func IsPalindrome(s string) bool {
 	s = strings.ToLower(s)
-	// misses an opportunity to abort early by using the more generic function below
+	// misses an opportunity to abort early in the next step, opting to use a more generic function
 	z := reverseString(s)
 	return z == s
 }

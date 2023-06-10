@@ -21,6 +21,7 @@ var (
 		{"aba", true},
 		{"Abba", true},
 		{"hello", false},
+		{"", true},
 	}
 )
 
