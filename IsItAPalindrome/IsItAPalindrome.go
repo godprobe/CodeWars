@@ -17,10 +17,10 @@ func reverseString(s string) string {
 		return s
 	}
 	r := []rune(s)
-	for i := 0; i <= l/2; i++ {
+	for i, j := 0, l; i < j; i, j = i+1, j-1 {
 		temp := r[i]
-		r[i] = r[l-i]
-		r[l-i] = temp
+		r[i] = r[j]
+		r[j] = temp
 	}
 	return string(r)
 }
