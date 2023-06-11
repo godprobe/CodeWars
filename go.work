@@ -20,6 +20,7 @@ use (
 	./MessiGoalsFunction
 	./MovesInSquaredStrings
 	./MultiplesOfANumber
+	./MultiplicationTableForNumber
 	./PowersOf2
 	./ReduceButGrow
 	./RemoveStringSpaces
