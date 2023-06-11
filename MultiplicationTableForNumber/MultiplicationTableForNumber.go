@@ -3,15 +3,9 @@ package kata
 import "fmt"
 
 func MultiTable(number int) string {
-	var result string
-	result += "1 * " + fmt.Sprint(number) + " = " + fmt.Sprint(number)
+	result := fmt.Sprintf("1 * %d = %d", number, number)
 	for i := 2; i <= 10; i++ {
-		result += "\n" +
-			fmt.Sprint(i) +
-			" * " +
-			fmt.Sprint(number) +
-			" = " +
-			fmt.Sprint(i*number)
+		result += fmt.Sprintf("\n%d * %d = %d", i, number, i*number)
 	}
 	return result
 }
