@@ -17,6 +17,7 @@ use (
 	./HighestProfitWins
 	./ILoveYouALittle
 	./IsItAPalindrome
+	./IsTheStringUppercase
 	./MergeTwoSortedArrays
 	./MessiGoalsFunction
 	./MovesInSquaredStrings
