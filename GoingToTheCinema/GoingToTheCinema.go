@@ -1,18 +1,20 @@
 package kata
 
+import (
+	"fmt"
+	"math"
+)
+
 func Movie(card, ticket int, perc float64) int {
-	var (
-		SystemACost int
-		SystemBCost float64
-		i           int
-	)
-	SystemACost = ticket
-	SystemBCost = float64(card) + float64(ticket)*perc
-	for i = 2; float64(SystemACost) < SystemBCost; i++ {
+	i := 0
+	p := perc
+	SystemACost := 0
+	SystemBCost := float64(card)
+	for i = 1; float64(SystemACost) <= math.Ceil(SystemBCost); i++ {
 		SystemACost += ticket
-		SystemBCost += float64(ticket) * (float64(i-1) * perc)
-		perc *= perc
-		//		fmt.Printf("System A: %v, System B: %v after %d tickets.\n", SystemACost, SystemBCost, i)
+		SystemBCost += float64(ticket) * p
+		p *= perc
+		fmt.Printf("A: %d, \tB: %v, \tTickets: %d\n", SystemACost, SystemBCost, i)
 	}
-	return i
+	return i - 1
 }
