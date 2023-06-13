@@ -11,6 +11,7 @@ use (
 	./CountOfPositivesSumOfNegatives
 	./CountTheDigit
 	./CountTheDivisorsOfANumber
+	./GoingToTheCinema
 	./GradeBook
 	./HighestAndLowest
 	./HighestProfitWins
