@@ -2,17 +2,16 @@ package kata
 
 import (
 	"math"
-	"strconv"
 	"strings"
 )
 
 func BinToDec(bin string) int {
-	var total, iter, isOne int
+	var total int
+	l := len(bin) - 1
+	m := map[string]int{"0": 0, "1": 1}
 	runes := strings.Split(bin, "")
-	for i := len(runes); i > 0; i-- {
-		isOne, _ = strconv.Atoi(runes[i-1])
-		total += int(math.Pow(float64(2), float64(iter))) * isOne
-		iter++
+	for i, val := range runes {
+		total += int(math.Pow(2.0, float64(l-i))) * m[val]
 	}
 	return total
 }
