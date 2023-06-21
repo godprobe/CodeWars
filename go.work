@@ -4,6 +4,7 @@ use (
 	./AlTeRnAtInGcAsE
 	./BeginnerSeries2Clock
 	./BinToDec
+	./BouncingBalls
 	./ConvertANumberToAString
 	./ConvertAStringToAnArray
 	./ConvertBooleansToStrings
