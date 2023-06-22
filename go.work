@@ -13,6 +13,7 @@ use (
 	./CountOfPositivesSumOfNegatives
 	./CountTheDigit
 	./CountTheDivisorsOfANumber
+	./DisemvowelTrolls
 	./GoingToTheCinema
 	./GradeBook
 	./HighestAndLowest
