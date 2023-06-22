@@ -1,17 +1,10 @@
 package kata
 
 func BouncingBall(h, bounce, window float64) int {
-	if AssertValidInput(h, bounce, window) {
-		var sightings int
-		for currentMax := h; currentMax > window; currentMax *= bounce {
-			if currentMax > window {
-				sightings++
-			} else {
-				return sightings
-			}
-			if currentMax*bounce > window {
-				sightings++
-			}
+	if isValidInput(h, bounce, window) {
+		sightings := 1
+		for currentMax := h * bounce; window < currentMax; currentMax *= bounce {
+			sightings += 2
 		}
 		return sightings
 	} else {
@@ -19,6 +12,6 @@ func BouncingBall(h, bounce, window float64) int {
 	}
 }
 
-func AssertValidInput(h, bounce, window float64) bool {
-	return h > 0 && bounce > 0 && bounce < 1 && window < h
+func isValidInput(h, bounce, window float64) bool {
+	return h > 0 && h > window && bounce > 0 && 1 > bounce
 }
