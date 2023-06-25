@@ -15,13 +15,14 @@ func MxDifLg(a1 []string, a2 []string) int {
 }
 
 func getMinMaxStrLens(ax []string) (min, max int) {
-	min = len(ax[0])
-	max = len(ax[0])
+	min, max = len(ax[0]), len(ax[0])
+
 	for i := 1; i < len(ax); i++ {
-		switch x := len(ax[i]); {
-		case x < min:
+		x := len(ax[i])
+		if x < min {
 			min = x
-		case x > max:
+		}
+		if x > max {
 			max = x
 		}
 	}
