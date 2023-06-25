@@ -4,7 +4,8 @@ import "testing"
 
 /*
 DESCRIPTION:
-You are given two arrays a1 and a2 of strings. Each string is composed with letters from a to z. Let x be any string in the first array and y be any string in the second array.
+You are given two arrays a1 and a2 of strings. Each string is composed with letters from a to z.
+Let x be any string in the first array and y be any string in the second array.
 
 Find max(abs(length(x) − length(y)))
 
@@ -29,6 +30,30 @@ var (
 			[]string{"hoqq", "bbllkw", "oox", "ejjuyyy", "plmiis", "xxxzgpsssa", "xxwwkktt", "znnnnfqknaz", "qqquuhii", "dvvvwz"},
 			[]string{"cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"},
 			13,
+		},
+		{
+			[]string{"ejjjjmmtthh", "zxxuueeg", "aanlljrrrxx", "dqqqaaabbb", "oocccffuucccjjjkkkjyyyeehh"},
+			[]string{"bbbaaayddqbbrrrv"},
+			10,
+		},
+		{
+			[]string{"ccct", "tkkeeeyy", "ggiikffsszzoo", "nnngssddu", "rrllccqqqqwuuurdd", "kkbbddaakkk"},
+			[]string{"tttxxxxxxgiiyyy", "ooorcvvj", "yzzzhhhfffaaavvvpp", "jjvvvqqllgaaannn", "tttooo", "qmmzzbhhbb"},
+			14,
+		},
+		{
+			[]string{},
+			[]string{"cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"},
+			-1,
+		},
+		{
+			[]string{},
+			[]string{"cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"},
+			-1,
+		}, {
+			[]string{},
+			[]string{},
+			-1,
 		},
 	}
 )
