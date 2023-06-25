@@ -21,6 +21,7 @@ use (
 	./ILoveYouALittle
 	./IsItAPalindrome
 	./IsTheStringUppercase
+	./MaximumLengthDistance
 	./MergeTwoSortedArrays
 	./MessiGoalsFunction
 	./MovesInSquaredStrings
